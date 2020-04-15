@@ -1,3 +1,10 @@
 <launch>
 
+<node
+    pkg="rosbot"
+    type="rosbot"
+    name="rosbot"
+    required="true"
+/>
+
 </launch>
