@@ -34,6 +34,8 @@ int main(int argc, char **argv) {
             auto msg = cv_bridge::CvImage({}, "bgr8", img).toImageMsg();
             imgPub.publish(msg);
         }
+
+        ros::spinOnce();
     }
 
     return 0;
