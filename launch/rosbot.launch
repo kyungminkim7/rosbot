@@ -1,10 +1,15 @@
 <launch>
 
-<node
-    pkg="rosbot"
-    type="rosbot"
-    name="rosbot"
-    required="true"
-/>
+<group ns="rosbot">
+    <node
+        pkg="rosbot"
+        type="camera"
+        name="camera"
+        required="true"
+        output="screen">
+
+        <param name="cam_device_index" value="2"/>
+    </node>
+</group>
 
 </launch>
